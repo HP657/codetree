@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int b, c;
-    string a;
+    int a, b, c;
     char _;
     cin >> a >> _ >> b >> _ >> c;
-    cout << a << _ << c << _ << b;
+    cout << "010" << _ << c << _ << b;
     return 0;
 }
