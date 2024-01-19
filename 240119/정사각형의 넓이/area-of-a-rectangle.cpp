@@ -5,7 +5,7 @@ int main() {
     cin >> a;
     b = a * a;
     cout << b << endl;
-    if (a > 5)
+    if (a < 5)
     {
         cout << "tiny";
     }
