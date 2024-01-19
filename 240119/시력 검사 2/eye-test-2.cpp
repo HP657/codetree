@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     double a;
     cin >> a;
-    if (a > 1.0)
+    if (a >= 1)
     {
         cout << "High";
     }
