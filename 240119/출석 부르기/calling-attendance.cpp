@@ -11,9 +11,13 @@ int main() {
     {
         cout << "Tom";
     }
-    else
+    else if (a == 3)
     {
         cout << "Paul";
+    }
+    else 
+    {
+        cout << "Vacancy";
     }
     return 0;
 }
