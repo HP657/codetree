@@ -5,7 +5,7 @@ int main() {
     cin >> a >> b;
     cout << fixed;
     cout.precision(2);
-    double c = (a + b) // (a - b);
+    double c = double(a + b) / double(a - b);
     cout << c;
     return 0;
 }
