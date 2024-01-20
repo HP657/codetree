@@ -25,7 +25,7 @@ int main() {
     }
     else
     {
-        cout >> "Failure";
+        cout << "Failure";
     }
     return 0;
 }
