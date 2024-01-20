@@ -11,7 +11,7 @@ int main() {
         }
         else if (a >= 6 && a <= 8)
         {
-            cout << "Spring";
+            cout << "Summer";
         }
         else if (a >= 9 && a <= 11)
         {
