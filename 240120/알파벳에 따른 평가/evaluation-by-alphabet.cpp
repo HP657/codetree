@@ -19,9 +19,13 @@ int main() {
     {
         cout << "Usually";
     }
-    else (a == 'D')
+    else if (a == 'D')
     {
-        cout >> "Effort";
+        cout << "Effort";
+    }
+    else
+    {
+        cout >> "Failure";
     }
     return 0;
 }
