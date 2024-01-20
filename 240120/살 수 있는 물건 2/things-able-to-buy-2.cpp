@@ -7,11 +7,11 @@ int main() {
     {
         cout << "book";
     }
-    if (a >= 1000)
+    else if (a >= 1000)
     {
         cout << "mask";
     }
-    if (a >= 500)
+    else if (a >= 500)
     {
         cout << "pen";
     }
