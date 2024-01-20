@@ -5,11 +5,11 @@ int main() {
     cin >> a >> b;
     if (a >= 90 && b >= 95)
     {
-        cout << 10;
+        cout << 100000;
     }
-    if (a >= 90 && b >= 90)
+    else if (a >= 90 && b >= 90)
     {
-        cout << 5;
+        cout << 50000;
     }
     else
     {
