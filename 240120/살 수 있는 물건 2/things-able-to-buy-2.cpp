@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
     int a;
-    cin >. a;
+    cin >> a;
     if (a >= 3000)
     {
         cout << "book";
