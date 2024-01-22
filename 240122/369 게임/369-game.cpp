@@ -11,7 +11,7 @@ int main() {
         }
         else
         {
-            cout << i;
+            cout << i << ' ';
         }
     }
     return 0;
