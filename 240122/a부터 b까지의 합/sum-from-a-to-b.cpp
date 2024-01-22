@@ -7,6 +7,6 @@ int main() {
     {   
         sum += i;
     }
-    cout << sum
+    cout << sum;
     return 0;
 }
