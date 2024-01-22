@@ -10,5 +10,12 @@ int main() {
             cout << i << ' ';
         }
     }
+    else
+    {
+        for (int i = b; i >= a; i--)
+        {
+            cout << i << ' ';
+        }   
+    }
     return 0;
 }
