@@ -5,7 +5,8 @@ int main() {
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
-        if (i % 3 == 0 || i % 6 == 0 || i % 9 == 0)
+        int a = i % 10;
+        if (a % 3 == 0 || a % 6 == 0 || a % 9 == 0)
         {
             cout << 0 << ' ';
         }
