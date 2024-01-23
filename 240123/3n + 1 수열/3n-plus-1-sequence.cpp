@@ -5,6 +5,10 @@ int main() {
     cin >> n;
     while (true)
     {
+        if (n == 1)
+        {
+            break;
+        }
         if (n % 2 == 0)
         {
             n /= 2;
@@ -14,10 +18,6 @@ int main() {
             n = (n * 3) + 1;
         }
         cnt++;
-        if (n == 1)
-        {
-            break;
-        }
     }
     cout << cnt;
     return 0;
