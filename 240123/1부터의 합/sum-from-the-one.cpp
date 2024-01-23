@@ -5,12 +5,12 @@ int main() {
     cin >> n;
     for (int i = 1; i <= 100; i++)
     {
+        sum += i;
         if (sum >= n)
         {
+            cout << i;
             break;
         }
-        sum += i;
     }
-    cout << sum;
     return 0;
 }
