@@ -4,7 +4,7 @@ int main() {
     int n;
     cin >> n;
     bool a = false;
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i < n; i++)
     {
         if (n / i != 1)
         {
