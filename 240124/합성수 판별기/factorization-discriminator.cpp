@@ -6,7 +6,7 @@ int main() {
     bool a = false;
     for (int i = 2; i < n; i++)
     {
-        if (n / i != 1)
+        if (n % i != 0)
         {
             a = true;
         }
