@@ -3,8 +3,8 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    int k = 1;
-    for (int i = 1; i <= n; i++)
+    int k = 1, g = n;
+    for (int i = 1; i <= n * 2; i++)
     {
         if (i % 2 == 1)
         {
@@ -16,31 +16,13 @@ int main() {
         }
         else
         {
-            for (int j = 1; j < n - k + 3; j++)
+            for (int j = 1; j <= g; j++)
             {
                 cout << "* ";
             }
+            g--;
         }
         cout << endl;
-    }
-    for (int i = 1; i <= n; i++)
-    {
-        if (i % 2 == 1)
-        {
-            k--;
-            for (int j = 1; j <= k; j++)
-            {
-                cout << "* ";
-            }
-        }
-        else
-        {
-            for (int j = 1; j < n - 1 + i - 1; j++)
-            {
-                cout << "* ";
-            }
-        }
-        cout << endl;
-    }    
+    } 
     return 0;
 }
