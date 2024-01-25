@@ -21,7 +21,7 @@ int main() {
         {
             cout << ' ';
         }
-        for (int j = n; j >= n - (i * 2); j--)
+        for (int j = 0; j < (i * 2 - 2) + 1; j++)
         {
             cout <<'*';
         }
