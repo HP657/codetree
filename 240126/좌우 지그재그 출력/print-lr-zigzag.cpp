@@ -4,11 +4,11 @@ int main() {
     int n, cnt = 1;
     cin >> n;
     int a[n][n];
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 0; j < n; j++)
         {
-            if (j % 2 == 1)
+            if (i % 2 == 0)
             {
                 a[i][j] = cnt;
                 cnt++;
@@ -21,11 +21,11 @@ int main() {
 
         }
     }
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 0; j < n; j++)
         {
-            cout << a[i][j];
+            cout << a[i][j] << ' ';
         }
         cout << endl;
     }
