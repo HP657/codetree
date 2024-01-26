@@ -12,6 +12,10 @@ int main() {
         for (int j = n; j > i; j--, m++)
         {
             cout << char(m) << ' ';
+            if (char(m) == 'Z')
+            {
+                m = 64;
+            }
         }
         cout << endl;
     }
