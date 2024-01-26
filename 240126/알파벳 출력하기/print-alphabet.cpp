@@ -8,9 +8,9 @@ int main() {
         for (int j = 0; j <= i; j++, m++)
         {
             cout << char(m);
-            if (char(m) = 'Z')
+            if (char(m) == 'Z')
             {
-                m = 65;
+                m = 64;
             }
         }
         cout << endl;
