@@ -6,7 +6,7 @@ int main() {
     for (int i = 0; i < n; i++)
     {
         cin >> m;
-        while (m == 1)
+        while (m != 1)
         {
             if (m % 2 == 0)
             {
