@@ -1,22 +1,30 @@
 #include <iostream>
 using namespace std;
+
 int main() {
     int n;
     cin >> n;
     if (n >= 2)
     {
-        cout << n << ' ';
+        cout << 2 << " ";
     }
-    for (int i = 3; i <= n; i++)
+
+    for (int i = 3; i <= n; i += 2)
     {
-        for (int j = 2; j < i; j++)
+        bool p = true;
+        for (int j = 3; j < i; j++)
         {
-            if (i % j != 0)
+            if (i % j == 0)
             {
-                cout << i << ' ';
+                p = false;
                 break;
             }
         }
+        if (p)
+        {
+            cout << i << " ";
+        }
     }
+
     return 0;
 }
