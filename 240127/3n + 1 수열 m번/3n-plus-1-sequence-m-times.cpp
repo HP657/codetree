@@ -6,15 +6,15 @@ int main() {
     for (int i = 0; i < n; i++)
     {
         cin >> m;
-        while (n == 1)
+        while (m == 1)
         {
             if (n % 2 == 0)
             {
-                n /= 2;
+                m /= 2;
             }
             else
             {
-                n = n * 3 + 1;
+                m = m * 3 + 1;
             }
             cnt++;
         }
