@@ -14,6 +14,7 @@ int main() {
             if (i % j != 0)
             {
                 cout << i << ' ';
+                break;
             }
         }
     }
