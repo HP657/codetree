@@ -7,7 +7,7 @@ int main() {
     {
         cout << n << ' ';
     }
-    for (int i = 2; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         for (int j = 2; j < i; j++)
         {
