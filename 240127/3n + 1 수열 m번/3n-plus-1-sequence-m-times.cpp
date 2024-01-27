@@ -8,7 +8,7 @@ int main() {
         cin >> m;
         while (m == 1)
         {
-            if (n % 2 == 0)
+            if (m % 2 == 0)
             {
                 m /= 2;
             }
