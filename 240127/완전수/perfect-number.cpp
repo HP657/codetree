@@ -16,6 +16,7 @@ int main() {
         {
             cnt += 1;
         }
+        sum = 0;
     }
     cout << cnt;
     return 0;
