@@ -15,7 +15,7 @@ int main() {
     }
     if (!c)
     {
-        cout << 0;
+        cout << "None";
     }
     return 0;
 }
