@@ -13,18 +13,15 @@ int main() {
         cin >> b[i];
     }
     int cnt = 0;
-    bool g;
+    bool g = false;
     for (int i = 0,j = 0; i < n; i++)
     {
         if (a[i] == b[j])
         {
+            g = true;
             for (j = 0; j < m; j++)
             {
-                if (a[i + j] == b[j])
-                {
-                    g = true;
-                }
-                else
+                if (a[i + j] != b[j])
                 {
                     g = false;
                 }
