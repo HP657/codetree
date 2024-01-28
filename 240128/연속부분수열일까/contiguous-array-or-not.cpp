@@ -17,25 +17,23 @@ int main() {
 
     for (int i = 0; i < n; i++)
     {
-        bool match = true;
+        g = true;
         for (int j = 0; j < m; j++)
         {
             if (a[i + j] != b[j])
             {
-                match = false;
+                g = false;
                 break;
             }
         }
-        if (match) {
-            g = true;
-            break;
+        if (g)
+        {
+            cout << "Yes";
         }
-    }
-
-    if (g)
-        cout << "Yes";
-    else
-        cout << "No";
+        else
+        {
+            cout << "No";
+        }
 
     return 0;
 }
