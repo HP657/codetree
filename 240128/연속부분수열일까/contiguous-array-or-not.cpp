@@ -13,6 +13,8 @@ int main() {
     {
         cin >> b[i];
     }
+
+
     bool g = false;
 
     for (int i = 0; i < n; i++)
@@ -29,13 +31,9 @@ int main() {
         if (g)
         {
             cout << "Yes";
-            break;
+            return 0;
         }
-        else
-        {
-            cout << "No";
-            break;
-        }
-
+    }
+    cout << "No";
     return 0;
 }
