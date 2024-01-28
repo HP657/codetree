@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int a, i = 1;
+    int a;
     while (true)
     {
         cin >> a;
@@ -9,7 +9,7 @@ int main() {
         {
             break;
         }
-        if (i % 2 == 1)
+        if (a % 2 == 1)
         {
             cout << a + 3;
         }
@@ -17,7 +17,6 @@ int main() {
         {
             cout << a / 2;
         }
-        i++;
         cout << ' ';
     }
     return 0;
