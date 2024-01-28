@@ -13,6 +13,7 @@ int main() {
         cin >> b[i];
     }
     int cnt = 0;
+    bool g = false;
     for (int i = 0,j = 0; i < n; i++)
     {
         if (a[i] == b[j])
@@ -26,18 +27,19 @@ int main() {
             }
             if (cnt == m)
             {
-                cout << "Yes";
-            }
-            else
-            {
-                cout << "No";
+                g = true;
+                break;
             }
             cnt = 0;
         }
-        else
-        {
-            cout << "No";
-        }
+    }
+    if (g)
+    {
+        cout << "Yes";
+    }
+    else
+    {
+        cout << "No";
     }
     return 0;
 }
