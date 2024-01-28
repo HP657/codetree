@@ -29,10 +29,12 @@ int main() {
         if (g)
         {
             cout << "Yes";
+            break;
         }
         else
         {
             cout << "No";
+            break;
         }
 
     return 0;
