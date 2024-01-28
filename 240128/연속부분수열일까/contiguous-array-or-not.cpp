@@ -12,23 +12,27 @@ int main() {
     {
         cin >> b[i];
     }
-    int cnt = 0;
+
+
     bool g;
-    for (int i = 0,j = 0; i < n; i++)
-    {
-        if (a[i] == b[j])
-        {
-            g = true;
-            for (j = 0; j < m; j++)
-            {
-                if (a[i + j] != b[j])
-                {
-                    g = false;
-                    break;
-                }
+    for (int i = 0; i <= n - m; i++) {
+        bool match = true;
+        for (int j = 0; j < m; j++) {
+            if (a[i + j] != b[j]) {
+                match = false;
+                break;
             }
         }
+        if (match) {
+            g = true;
+            break;
+        }
     }
+
+
+
+
+
     if (g)
     {
         cout << "Yes";
