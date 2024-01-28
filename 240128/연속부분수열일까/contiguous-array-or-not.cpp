@@ -6,16 +6,22 @@ int main() {
     cin >> n >> m;
     int a[n], b[m];
     for (int i = 0; i < n; i++)
+    {
         cin >> a[i];
+    }
     for (int i = 0; i < m; i++)
+    {
         cin >> b[i];
+    }
+    bool g = false;
 
-    bool g = false; // 변수 초기화
-
-    for (int i = 0; i <= n - m; i++) {
+    for (int i = 0; i < n; i++)
+    {
         bool match = true;
-        for (int j = 0; j < m; j++) {
-            if (a[i + j] != b[j]) {
+        for (int j = 0; j < m; j++)
+        {
+            if (a[i + j] != b[j])
+            {
                 match = false;
                 break;
             }
