@@ -1,20 +1,17 @@
 #include <iostream>
 using namespace std;
+
 int main() {
     int n, m;
     cin >> n >> m;
     int a[n], b[m];
     for (int i = 0; i < n; i++)
-    {
         cin >> a[i];
-    }
     for (int i = 0; i < m; i++)
-    {
         cin >> b[i];
-    }
 
+    bool g = false; // 변수 초기화
 
-    bool g;
     for (int i = 0; i <= n - m; i++) {
         bool match = true;
         for (int j = 0; j < m; j++) {
@@ -29,17 +26,10 @@ int main() {
         }
     }
 
-
-
-
-
     if (g)
-    {
         cout << "Yes";
-    }
     else
-    {
         cout << "No";
-    }
+
     return 0;
 }
