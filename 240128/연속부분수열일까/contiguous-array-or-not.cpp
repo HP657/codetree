@@ -22,14 +22,13 @@ int main() {
             {
                 if (a[i + j] == b[j])
                 {
-                    cnt += 1;
+                    g = true;
+                }
+                else
+                {
+                    g = false;
                 }
             }
-            if (cnt == m)
-            {
-                g = true;
-            }
-            cnt = 0;
         }
     }
     if (g)
