@@ -7,7 +7,7 @@ int main() {
     for (int i = 0; i < n; i++)
     {
         cin >> b;
-        a[b - 1] = 1;
+        a[b - 1] += 1;
     }
     for (int i = 0; i < 10; i++)
     {
