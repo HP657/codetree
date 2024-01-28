@@ -4,15 +4,10 @@ int main() {
     int a, b, i = 0;
     cin >> a >> b;
     int c[b] = {0};
-    while (true)
+    while (a > 1)
     {
-        if (a == 0)
-        {
-            break;
-        }
         c[a % b] += 1;
         a = a / b;
-        
         i++;
     }
     int sum = 0;
