@@ -28,7 +28,6 @@ int main() {
             if (cnt == m)
             {
                 g = true;
-                break;
             }
             cnt = 0;
         }
