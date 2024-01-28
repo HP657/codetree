@@ -34,6 +34,10 @@ int main() {
             }
             cnt = 0;
         }
+        else
+        {
+            cout << "No";
+        }
     }
     return 0;
 }
