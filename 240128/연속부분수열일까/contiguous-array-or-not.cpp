@@ -13,7 +13,7 @@ int main() {
         cin >> b[i];
     }
     int cnt = 0;
-    bool g = false;
+    bool g;
     for (int i = 0,j = 0; i < n; i++)
     {
         if (a[i] == b[j])
