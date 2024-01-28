@@ -18,12 +18,13 @@ int main() {
     {
         if (a[i] == b[j])
         {
-            g = false;
+            g = true;
             for (j = 0; j < m; j++)
             {
-                if (a[i + j] == b[j])
+                if (a[i + j] != b[j])
                 {
-                    g = true;
+                    g = false;
+                    break;
                 }
             }
         }
