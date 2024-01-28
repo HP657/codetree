@@ -15,7 +15,7 @@ int main() {
         if (b == 1)
         {
             cin >> z;
-            cout << z;
+            cout << a[z];
         }
         else if (b == 2)
         {
