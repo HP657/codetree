@@ -13,28 +13,27 @@ int main() {
 
     }
 	
-	int prev_max_idx = n;
 	while(true)
     {
-		int max_idx = 0;
-		for(int i = 1; i < prev_max_idx; i++)
+		int idx = 0;
+		for(int i = 1; i < b; i++)
         {
-            if(a[i] > a[max_idx])
+            if(a[i] > a[idx])
             {
-                max_idx = i;
+                idx = i;
             }
 				
         }
 			
 		
-		cout << max_idx + 1 << " ";
+		cout << idx + 1 << " ";
 		
-		if(max_idx == 0)
+		if(idx == 0)
         {
             break;
         }
 		
-		prev_max_idx = max_idx;
+		n = idx;
 	}
 	
 	return 0;
