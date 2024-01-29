@@ -1,22 +1,24 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n, val = 0;
+    int n, val;
     cin >> n;
     int a[n];
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-    val = a[n - 1] - a[n - 3];
-    if (val >= 0)
+    int max = 0;
+    for (int i = 0; i < n; i++)
     {
-        cout << val;
+        for (int j = i; j < n; j++)
+        {
+            if (a[j] - a[i] > max)
+            {
+                max = a[j] - a[i];
+            }
+        }
     }
-    else
-    {
-        cout << 0;
-    }
-    
+    cout << max;
     return 0;
 }
