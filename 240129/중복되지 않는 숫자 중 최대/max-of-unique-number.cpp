@@ -25,6 +25,6 @@ int main() {
             }
         }
     }
-    cout << max;
+    cout << l;
     return 0;
 }
