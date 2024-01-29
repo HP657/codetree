@@ -1,7 +1,8 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 int main() {
-    int n, min, cnt = 0;
+    int n, min = INT_MAX, cnt = 0;\
     cin >> n;
     int a[n];
     for (int i = 0; i < n; i++)
