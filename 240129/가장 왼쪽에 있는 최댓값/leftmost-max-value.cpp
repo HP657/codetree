@@ -16,24 +16,24 @@ int main() {
     
 	while(true)
     {
-		int idx = 0;
+		int max_idx = 0;
         
 		for(int i = 1; i < prev_max_idx; i++)
         {
-			if(a[i] > a[idx])
+			if(a[i] > a[max_idx])
             {
-				idx = i;
+				max_idx = i;
             }
         }
 		
-		cout << idx + 1 << " ";
+		cout << max_idx + 1 << " ";
 		
-		if(idx == 0)
+		if(max_idx == 0)
 		{
             break;
         }
 		
-		prev_max_idx = idx;
+		prev_max_idx = max_idx;
 	}
 	
 	return 0;
