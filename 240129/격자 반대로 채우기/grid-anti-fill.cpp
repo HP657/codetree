@@ -8,14 +8,29 @@ int main() {
     {
         for (int j = n - 1; j >= 0; j--, q++)
         {
-            if (i % 2 == 0)
+            if (n % 2 == 0)
             {
-                a[n - j - 1][i] = q;
+                if (i % 2 == 0)
+                {
+                    a[n - j - 1][i] = q;
+                }
+                else
+                {
+                    a[j][i] = q;
+                }
             }
             else
             {
-                a[j][i] = q;
+                if (i % 2 == 1)
+                {
+                    a[n - j - 1][i] = q;
+                }
+                else
+                {
+                    a[j][i] = q;
+                }
             }
+            
             
         }
     }
