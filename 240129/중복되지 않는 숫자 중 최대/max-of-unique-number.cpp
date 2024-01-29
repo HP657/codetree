@@ -17,11 +17,11 @@ int main() {
                 {
                     cnt++;
                 }
-                if (cnt == 2)
-                {
-                    cnt = 0;
-                    break;
-                }
+            }
+            if (cnt == 1)
+            {
+                int l = max;
+                cnt = 0;
             }
         }
     }
