@@ -1,5 +1,4 @@
 #include <iostream>
-#include <climits>
 using namespace std;
 
 int main() {
@@ -10,7 +9,7 @@ int main() {
     {
         cin >> a[i];
     }
-    int max = INT_MIN;
+    int max = -1;
     for(int i = 0; i < n; i++)
     {
         if(max < a[i])
