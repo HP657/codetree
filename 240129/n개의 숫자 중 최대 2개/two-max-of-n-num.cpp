@@ -2,25 +2,27 @@
 #include <climits>
 using namespace std;
 int main() {
-    int n, max1 = INT_MIN, max2 = INT_MIN, m;
+    int n, max = INT_MIN, m;
     cin >> n;
     int a[n];
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 10; i++)
     {
         cin >> a[i];
-        if (max1 <= a[i])
+        if (max <= a[i])
         {
-            max1 = a[i];
+            max = a[i];
             m = i;
         }
     }
+    cout << max << ' ';
+    max = INT_MIN;
     for (int i = 0; i < n; i++)
     {
-        if (i != m && max2 <= a[i])
+        if (i != m && max <= a[i])
         {
-            max2 = a[i];
+            max = a[i];
         }
     }
-    cout << max1 << ' ' << max2;
+    cout << max;
     return 0;
 }
