@@ -1,9 +1,10 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
 	int n;
-	int a[n + 1];
+	int a[n];
 	
 	cin >> n;	
 	
