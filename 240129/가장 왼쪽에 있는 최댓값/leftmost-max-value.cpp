@@ -1,10 +1,12 @@
 #include <iostream>
 
+#define MAX_N 1000
+
 using namespace std;
 
 int main() {
 	int n;
-	int a[n + 1];
+	int a[MAX_N];
 	
 	cin >> n;	
 	
