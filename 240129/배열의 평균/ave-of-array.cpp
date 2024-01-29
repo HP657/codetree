@@ -38,7 +38,7 @@ int main() {
         {
             sum += a[j][i];
         }
-        cout << sum / 8.0 << ' ';
     }
+    cout << sum / 8.0;
     return 0;
 }
