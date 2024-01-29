@@ -1,10 +1,12 @@
 #include <iostream>
 
+#define MAX_N 1000
+
 using namespace std;
 
 int main() {
 	int n;
-	int a[n];
+	int a[MAX_N];
 	
 	cin >> n;	
 	
@@ -24,14 +26,8 @@ int main() {
         // 최댓값이 여러개인 경우 가장 왼쪽에 있는
         // 원소가 뽑히게 됩니다.
 		for(int i = 1; i < prev_max_idx; i++)
-        {
-            if(a[i] > a[max_idx])
-            {
-                max_idx = i;
-            }
-				
-        }
-			
+			if(a[i] > a[max_idx])
+				max_idx = i;
 		
 		cout << max_idx + 1 << " ";
 		
