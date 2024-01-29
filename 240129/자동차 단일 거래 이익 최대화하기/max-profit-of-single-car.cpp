@@ -8,20 +8,9 @@ int main() {
     {
         cin >> a[i];
     }
-    for (int i = 0; i < n; i++)
-    {
-        if (i % 2 == 0 && i == n - 1)
-        {
-            val -= a[i];
-        }
-        else if (i == n - 1)
-        {
-            val += a[i];
-        }
-    }
+    val = a[n - 1] - a[n - 3];
     if (val >= 0)
     {
-        val = a[n - 1] - val;
         cout << val;
     }
     else
