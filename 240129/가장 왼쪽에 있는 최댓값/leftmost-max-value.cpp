@@ -8,32 +8,32 @@ int main() {
 	cin >> n;	
 	
 	for(int i = 0; i < n; i++)
-    {
-		cin >> a[i];
-
+	{
+        cin >> a[i];
     }
 	
+	int prev_max_idx = n;
+    
 	while(true)
     {
 		int idx = 0;
-		for(int i = 1; i < idx; i++)
+        
+		for(int i = 1; i < prev_max_idx; i++)
         {
-            if(a[i] > a[idx])
+			if(a[i] > a[idx])
             {
-                idx = i;
+				idx = i;
             }
-				
         }
-			
 		
 		cout << idx + 1 << " ";
 		
 		if(idx == 0)
-        {
+		{
             break;
         }
 		
-		n = idx;
+		prev_max_idx = idx;
 	}
 	
 	return 0;
