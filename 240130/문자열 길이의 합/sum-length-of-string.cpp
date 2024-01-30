@@ -10,7 +10,7 @@ int main() {
         sum += a.length();
         for (int j = 0; j < a.length(); j++)
         {
-            if (a[j] == 'a')
+            if (a[0] == 'a')
             {
                 cnt++;
             }
