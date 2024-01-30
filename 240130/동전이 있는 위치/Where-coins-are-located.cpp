@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     int n, m, b, c;
     cin >> n >> m;
-    int a[n][n] = {0};
+    int a[n][n] = {};
     for (int i = 0; i < m; i++)
     {
         cin >> b >> c;
