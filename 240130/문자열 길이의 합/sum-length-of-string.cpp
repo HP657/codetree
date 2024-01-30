@@ -8,12 +8,9 @@ int main() {
     {
         cin >> a;
         sum += a.length();
-        for (int j = 0; j < a.length(); j++)
+        if (a[0] == 'a')
         {
-            if (a[0] == 'a')
-            {
-                cnt++;
-            }
+            cnt++;
         }
     }
     cout << sum << ' ' << cnt;
