@@ -7,6 +7,6 @@ int main() {
     {
         a = 65;
     }
-    cout << int(a);
+    cout << char(a);
     return 0;
 }
