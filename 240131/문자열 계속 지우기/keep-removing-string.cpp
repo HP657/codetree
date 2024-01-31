@@ -1,28 +1,50 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main() {
-    string a, b;
-    cin >> a >> b;
+    string str_a, str_b;
+    cin >> str_a;
+    cin >> str_b;
 
-    int c = b.length();
-    for (int i = 0; i <= a.length() - c; i++)
+    int len_a = str_a.length();
+    int len_b = str_b.length();
+
+    while(true)
     {
-        bool match = true;
-        for (int j = 0; j < c; j++)
+        int idx = -1;
+        
+        int candidates = len_a - len_b + 1;
+        for(int i = 0; i < candidates; i++)
         {
-            if (a[i + j] != b[j])
+            bool is_same = true;
+            for(int j = 0; j < len_b; j++)
             {
-                match = false;
+                if(str_a[i + j] != str_b[j])
+                {
+                    is_same = false;
+                    break;
+                }
+            }
+            if(is_same)
+            {
+                idx = i;
                 break;
             }
         }
-        if (match) {
-            a.erase(i, c);
-            i -= c; 
+
+        if(idx == -1)
+        {
+            break;
         }
+        
+        str_a = str_a.substr(0, idx) + str_a.substr(idx + len_b);
+
+        len_a = str_a.length();
     }
 
-    cout << a;
+    cout << str_a;
     return 0;
-}
+} 
+// 문제 풀 당시 솔직히 이해 못함 나중에 다시 한번 봐야될듯
