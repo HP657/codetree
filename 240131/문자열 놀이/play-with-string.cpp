@@ -3,9 +3,10 @@ using namespace std;
 int main() {
     string s;
     int q;
-    cin >> s >> q;
-    int a, b, c, temp;
+    char temp;
+    int a, b, c;
     char d, e;
+    cin >> s >> q;
     for (int i = 0; i < q; i++)
     {
         cin >> a;
@@ -14,14 +15,9 @@ int main() {
             cin >> b >> c;
             for (int j = 0; j < s.length(); j++)
             {
-                if (s[j] == s[b])
-                {
-                    s[j] = s[c];
-                }
-                else if (s[j] == s[c])
-                {
-                    s[j] = s[b];
-                }
+                char temp = s[b - 1];
+                s[b - 1] = s[c - 1];
+                s[c - 1] = temp;
             }
             cout << s << endl;;
         }
