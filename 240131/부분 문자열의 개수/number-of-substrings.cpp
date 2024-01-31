@@ -18,11 +18,11 @@ int main() {
                 {
                     break;
                 }
-                if (q == b.length())
-                {
-                    cnt++;
-                    q = 0;
-                }
+            }
+            if (q == b.length())
+            {
+                cnt++;
+                q = 0;
             }
         }
         
