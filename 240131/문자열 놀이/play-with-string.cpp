@@ -13,12 +13,9 @@ int main() {
         if (a == 1)
         {
             cin >> b >> c;
-            for (int j = 0; j < s.length(); j++)
-            {
-                char temp = s[b - 1];
-                s[b - 1] = s[c - 1];
-                s[c - 1] = temp;
-            }
+            temp = s[b - 1];
+            s[b - 1] = s[c - 1];
+            s[c - 1] = temp;
             cout << s << endl;;
         }
         else if (a == 2)
