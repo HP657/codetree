@@ -14,6 +14,10 @@ int main() {
                 {
                     q++;
                 }
+                else
+                {
+                    break;
+                }
                 if (q == b.length())
                 {
                     cnt++;
