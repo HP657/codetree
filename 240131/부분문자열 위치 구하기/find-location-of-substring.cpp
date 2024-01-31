@@ -7,24 +7,27 @@ int main() {
     string b;
     cin >> b;
 
-    int k = -1; // Initialize the result index to -1
+    int k = -1;
 
-    for (int i = 0; i <= a.length() - b.length(); i++) {
-        bool match = true; // Assume a match at index i
+    for (int i = 0; i <= a.length(); i++)
+    {
+        bool p = true;
 
-        for (int j = 0; j < b.length(); j++) {
-            if (a[i + j] != b[j]) {
-                match = false; // Set match to false if characters don't match
+        for (int j = 0; j < b.length(); j++)
+        {
+            if (a[i + j] != b[j])
+            {
+                p = false;
                 break;
             }
         }
 
-        if (match) {
-            k = i; // Update the result index if a match is found
-            break; // Break out of the loop since we found the first match
+        if (p) {
+            k = i;
+            break;
         }
     }
 
-    cout << k; // Output the result index
+    cout << k;
     return 0;
 }
