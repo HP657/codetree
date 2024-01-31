@@ -3,10 +3,11 @@ using namespace std;
 int main() {
     char a;
     cin >> a;
-    if (int(a) == 122)
+    int b = int(a) + 1;
+    if (b == 123)
     {
-        a = 65;
+        b = 65;
     }
-    cout << char(a);
+    cout << char(b);
     return 0;
 }
