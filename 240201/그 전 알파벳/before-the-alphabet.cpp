@@ -4,7 +4,7 @@ int main() {
     char a;
     cin >> a;
     int b = int(a) - 1;
-    if (b == 97)
+    if (b == 96)
     {
         b = 122;
     }
