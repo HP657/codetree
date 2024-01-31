@@ -5,7 +5,7 @@ int main() {
     cin >> a;
     char b;
     cin >> b;
-    int j;
+    int j = -1;
     for (int i = 0; i < a.length(); i++)
     {
         if (a[i] == b)
@@ -14,6 +14,13 @@ int main() {
             break;
         }
     }
-    cout << j;
+    if (j == - 1)
+    {
+        cout << "No";
+    }
+    else
+    {
+        cout << j;
+    }
     return 0;
 }
