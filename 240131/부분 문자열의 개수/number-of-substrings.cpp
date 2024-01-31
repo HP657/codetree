@@ -6,6 +6,7 @@ int main() {
     int cnt = 0, q = 0;
     for (int i = 0; i < a.length(); i++)
     {
+        q = 0;
         if (a[i] == b[0])
         {
             for (int j = 0; j < b.length(); j++)
@@ -24,7 +25,6 @@ int main() {
         if (q == b.length())
         {
             cnt++;
-            q = 0;
         }
     }
     cout << cnt;
