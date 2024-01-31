@@ -11,7 +11,7 @@ int main() {
         {
             a[i] = c;
         }
-        else if (a[i] == c);
+        else if (a[i] == c)
         {
             a[i] = b;
         }
