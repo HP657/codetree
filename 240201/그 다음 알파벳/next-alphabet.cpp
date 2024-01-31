@@ -6,7 +6,7 @@ int main() {
     int b = int(a) + 1;
     if (b == 123)
     {
-        b = 65;
+        b = 97;
     }
     cout << char(b);
     return 0;
