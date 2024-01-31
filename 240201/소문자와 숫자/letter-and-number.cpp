@@ -14,6 +14,5 @@ int main() {
             cout << char(int(a[i] + 32));
         }
     }
-    bool num = (48 57)
     return 0;
 }
