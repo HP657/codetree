@@ -9,7 +9,7 @@ int main() {
     int cnt = 0;
     for (int i = 0;i < c.length(); i++)
     {
-        if(c[i] == 1)
+        if(c[i] == '1')
         {
             cnt++;
         }
