@@ -10,7 +10,7 @@ int main() {
     }
     string str;
     str = to_string(sum);
-    sum = sum.substr(1, sum.length()) + sum.substr(0, 1);
-    cout << sum;
+    str = str.substr(1, str.length()) + str.substr(0, 1);
+    cout << str;
     return 0;
 }
