@@ -15,7 +15,7 @@ int main() {
     cout << cnt << endl;
     for (int i = 0; i < cnt; i += 2)
     {
-        cout << str[i] << endl;
+        cout << a[i] << endl;
     }
     return 0;
 }
