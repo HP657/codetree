@@ -12,8 +12,8 @@ int main() {
         }
         if (cnt == a.length())
         {
-            break;
             cnt = -1;
+            break;
         }
         a = a.substr(1, a.length()) + a.substr(0, 1);
         cnt++;
