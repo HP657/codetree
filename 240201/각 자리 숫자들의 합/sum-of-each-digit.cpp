@@ -8,7 +8,7 @@ int main() {
     a = to_string(n);
     for (int i = 0; i < a.length(); i++)
     {
-        sum += stoi(a[i]);
+        sum += int(a[i]) - 48;
     }
     cout << sum;
     return 0;
