@@ -10,6 +10,11 @@ int main() {
         {
             break;
         }
+        if (cnt == a.length())
+        {
+            break;
+            cnt = -1;
+        }
         a = a.substr(1, a.length()) + a.substr(0, 1);
         cnt++;
     }
