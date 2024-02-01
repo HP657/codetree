@@ -10,7 +10,7 @@ int main() {
         {
             break;
         }
-        cnt++
+        cnt++;
     }
     cout << cnt << endl;
     for (int i = 0; i < cnt; i += 2)
