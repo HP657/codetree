@@ -1,30 +1,23 @@
 #include <iostream>
-#include <string>
 using namespace std;
-
 int main() {
     string a, b;
     cin >> a >> b;
-
     int cnt = 0;
-    if (a.length() != b.length())
+    while (true)
     {
-        cout << -1;
-        return 0;
-    }
-
-    while (a != b)
-    {
-        a = a.substr(1) + a[0]; 
-        cnt++;
-
-        if (cnt > a.length())
+        if (a == b)
+        {
+            break;
+        }
+        if (cnt == b.length())
         {
             cnt = -1;
             break;
         }
+        a = a.substr(1, a.length()) + a.substr(0, 1);
+        cnt++;
     }
-
     cout << cnt;
 
     return 0;
