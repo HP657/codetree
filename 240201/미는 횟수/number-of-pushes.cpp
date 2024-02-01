@@ -10,7 +10,7 @@ int main() {
         {
             break;
         }
-        if (cnt == a.length() - 1)
+        if (cnt == a.length() + 1)
         {
             cnt = -1;
             break;
