@@ -7,7 +7,7 @@ int main() {
     int n;
     cin >> n;
     char a;
-    int b;
+    int b, d;
     for (int i = 0; i < n; i++)
     {
         cin >> a >> b;
