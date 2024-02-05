@@ -1,24 +1,25 @@
 #include <iostream>
-#include <string>
-#include <climits> // INT_MAX를 사용하기 위해 포함합니다.
+#include <climits>
 using namespace std;
 
 int main() {
     int n;
     cin >> n;
-    string firstString = ""; // 가장 먼저 나오는 문자열을 저장할 변수
-    int minAscii = INT_MAX; // 아스키 코드의 최대값으로 초기화
+    string a = "";
+    int min = INT_MAX;
 
-    for (int i = 0; i < n; i++) {
-        string currentString;
-        cin >> currentString;
-        if (int(currentString[0]) < minAscii) {
-            minAscii = int(currentString[0]);
-            firstString = currentString;
+    for (int i = 0; i < n; i++)
+    {
+        string b;
+        cin >> b;
+        if (int(b[0]) < min)
+        {
+            min = int(b[0]);
+            a = b;
         }
     }
 
-    cout << firstString << endl;
+    cout << a << endl;
 
     return 0;
 }
