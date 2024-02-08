@@ -7,12 +7,12 @@ int a(int n, int m) {
     int q = max;
 
     while (true) {
-        if (max % n == 0 && max % m == 0) {
+        if (q % n == 0 && q % m == 0) {
             break;
         }
-        max += max;
+        q += max;
     }
-    return max;
+    return q;
 }
 
 int main() {
