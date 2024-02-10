@@ -14,7 +14,6 @@ int t(int a, int b) {
                     cnt++;
                     break;
                 }
-                
                 num /= 10;
             }
         }
