@@ -26,7 +26,6 @@ bool aa(int n) {
 int main() {
     int y;
     cin >> y;
-    cout << aa(y);
-    
+    cout << (aa(y) ? "true" : "false");
     return 0;
 }
