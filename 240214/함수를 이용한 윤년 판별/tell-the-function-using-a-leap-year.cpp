@@ -26,12 +26,7 @@ bool aa(int n) {
 int main() {
     int y;
     cin >> y;
-    bool c = aa(y);
-    if (c) {
-        cout << "true";
-    }
-    else {
-        cout << "false";
-    }
+    cout << aa(y);
+    
     return 0;
 }
