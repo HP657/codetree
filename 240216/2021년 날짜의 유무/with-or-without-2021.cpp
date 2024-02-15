@@ -23,10 +23,13 @@ bool mm(int m, int d) {
     }
     else{
         if (m <= 7) {
-            ddd = 30;
-        }
-        else if (m == 2) {
-            ddd = 28;
+            if (m == 2) {
+                ddd = 28;
+            }
+            else {
+                ddd = 30;
+            }
+            
         }
         else {
             ddd = 31;
