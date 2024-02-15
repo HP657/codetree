@@ -22,11 +22,11 @@ int main() {
     int a, c;
     char b;
     cin >> a >> b >> c;
-    if (!(aa(a, b, c))) {
-        cout << false;
+    if (aa(a, b, c)) {
+        cout << a << ' ' << b << ' ' << c << " = " << aa(a, b, c);
     }
     else {
-        cout << a << ' ' << b << ' ' << c << " = " << aa(a, b, c);
+        cout << "False";
     }
     return 0;
 }
