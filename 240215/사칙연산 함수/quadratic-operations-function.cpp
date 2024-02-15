@@ -22,7 +22,7 @@ int main() {
     int a, c;
     char b;
     cin >> a >> b >> c;
-    if (aa(a, b, c)) {
+    if (!(aa(a, b, c))) {
         cout << false;
     }
     else {
