@@ -9,6 +9,9 @@ bool dd (int d, int ddd) {
 }
 
 bool mm(int m, int d) {
+    if (m > 12) {
+        return false;
+    }
     int ddd;
     if (m % 2 == 1) {
         if (m <= 7) {
