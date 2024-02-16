@@ -37,7 +37,7 @@ int main() {
     if (ss == -1)
         cout << "-1";
     else {
-        const char sss[] = {"Spring", "Summer", "Autumn", "Winter"};
+        char sss[] = {"Spring", "Summer", "Autumn", "Winter"};
         cout << sss[ss];
     }
     return 0;
