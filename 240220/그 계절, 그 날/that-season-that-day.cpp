@@ -1,23 +1,21 @@
 #include <iostream>
 using namespace std;
 
-bool aa(int y) {
-    if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
-        return true;
-    else
-        return false;
+bool yun(int y) {
+    return (y % 4 == 0 && y % 100 != 0) || (y % 400 == 0);
 }
 
-int bb(int y, int m, int d) {
-    if (m < 1 || m > 12)
-        return -1;
-    if (d < 1 || d > 31)
+int season(int y, int m, int d) {
+    if (m < 1 || m > 12 || d < 1 || d > 31)
         return -1;
 
-    if (m == 2 && d > 29)
-        return -1;
-    else if (m == 2 && d == 29 && !aa(y))
-        return -1;
+    if (m == 2) {
+        if (d > 29 || (d == 29 && !yun(y)))
+            return -1;
+    } else if (m == 4 || m == 6 || m == 9 || m == 11) {
+        if (d > 30)
+            return -1;
+    }
 
     if (m >= 3 && m <= 5)
         return 0;
@@ -27,19 +25,19 @@ int bb(int y, int m, int d) {
         return 2;
     else
         return 3;
-    return -1;
 }
 
 int main() {
     int y, m, d;
     cin >> y >> m >> d;
 
-    int ss = bb(y, m, d);
-    if (ss == -1)
+    int aa = season(y, m, d);
+    if (aa == -1)
         cout << "-1";
     else {
-        string sss[4] = {"Spring", "Summer", "Fall", "Winter"};
-        cout << sss[ss];
+        string seasons[4] = {"Spring", "Summer", "Fall", "Winter"};
+        cout << seasons[aa];
     }
+
     return 0;
 }
