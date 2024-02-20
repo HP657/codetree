@@ -2,7 +2,7 @@
 using namespace std;
 
 bool bb(int *a, int *b) {
-    return a > b ? true : false;
+    return *a > *b ? true : false;
 }
 
 void aa(int *a, int *b) {
