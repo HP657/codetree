@@ -1,17 +1,22 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int aa(int n) {
+int aa(int n, vector<int>& dp) {
     if (n < 2) {
         return n;
     }
-
-    return aa(n - 1) + aa(n - 2);
+    
+    if (dp[n] == -1) {
+        dp[n] = aa(n - 1, dp) + aa(n - 2, dp);
+    }
+    return dp[n];
 }
 
 int main() {
     int n;
     cin >> n;
-    cout << aa(n);
+    vector<int> dp(n + 1, -1);
+    cout << aa(n, dp);
     return 0;
 }
