@@ -2,11 +2,8 @@
 using namespace std;
 
 int aa(int n) {
-    if (n == 0) {
-        return 0;
-    }
-    if (n == 1) {
-        return 1;
+    if (n < 2) {
+        return n;
     }
 
     return aa(n - 1) + aa(n - 2);
